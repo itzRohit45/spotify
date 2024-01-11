@@ -1,0 +1,390 @@
+body{
+    font-family: 'Montserrat',sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;  
+    margin-right: 1rem;
+}
+
+.main_content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music_player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 65px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;  
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav_option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+}
+
+.nav_option:hover{
+    opacity: 1;
+}
+
+.nav_option i{
+    font-size: 1.25rem;
+    margin-right: 0.75rem;
+}
+
+.nav_option a{
+    font-size: 1rem;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib_option img{
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: 0.75rem;
+}
+
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i:hover{
+   opacity: 1;
+}
+
+.box{
+    background-color: #232323;
+    height: 8.7rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1rem 0;
+    padding: 0.75rem 1rem;
+}
+
+.box_p1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.box_p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.6rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    width: fit-content;
+    margin-bottom: 5px;
+}
+
+.dark_badge{
+    background-color: black;
+    color: white;
+}
+.badge:hover{
+    cursor:pointer;
+    padding:0.8rem 1.1rem;
+  }
+
+  .sticky_nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0 0.5rem 0;
+    z-index: 5;
+  }
+
+  .sticky_nav_icons img{
+    margin-left: 0.75rem;
+  }
+
+  .sticky_nav_options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav_item{
+    margin-right: 1rem;
+  }
+
+  @media (max-width:1000px)
+  {
+    .hide{
+        display: none;
+    }
+  }
+
+  .card{
+    background-color: #232323;
+    width: 160px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .card_cont{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card_img{
+    width: 100%;
+    border-radius: 0.5rem;
+    
+  }
+  .card:hover{
+    box-shadow: 2px 2px 4px grey;
+  }
+
+  .card_title{
+    font-weight: 600;
+  }
+
+  .card_info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
+
+  .footer{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .line{
+    height: 30%;
+    width: 90%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+  }
+
+  .music_player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .album{
+    width: 25%;
+  }
+
+  .player{
+    width: 50%;
+  }
+
+  .control{
+    width: 25%;
+  }
+
+  .player_controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .player_control_icon{
+    height: 1rem;
+    margin-right: 1.8rem;
+    opacity: 0.7;
+  }
+
+  .player_control_icon:hover{
+      opacity: 1;
+  }
+
+  .playback_bar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .progress_bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .progress_bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.25rem;
+    border-radius: 100px;
+  }
+
+  .progress_bar::-webkit-slider-thumb{
+     border-radius: 50%;
+     appearance: none;
+     height: 1rem;
+     width: 1rem;
+     background-color: #1bd760;
+     margin-top: -6px;
+  }
+
+  .album{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+  }
+
+  .mimg{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 4px;
+
+  }
+
+  .album_p p{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-left: 1rem;
+  }
+  .mp{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-right: 1rem;
+  }
+
+  .singer{
+    opacity: 0.7;
+  }
+  .control{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .vol{
+    width: 30%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 0.6rem;
+    cursor: pointer;
+  }
+ 
+  .vol::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.25rem;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  .vol::-webkit-slider-thumb{
+     border-radius: 50%;
+     appearance: none;
+     height: 0.8rem;
+     width: 0.8rem;
+     background-color: #1bd760;
+     margin-top: -4px;
+     cursor: pointer;
+  }
+
+  .cimg1{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 2px;
+    margin-right: 0.6rem;
+    border: 2px solid grey;
+    cursor: pointer;
+  }
+  .cimg2{
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 1px;
+    margin-right: 0.6rem;
+    cursor: pointer;
+  }
+  .cimg3{
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: wheat;
+    color: grey;
+    border-radius: 1px;
+    margin-right: 0.6rem;
+    cursor: pointer;
+  }
+
+  .m{
+    margin-right: 0.6rem;
+    cursor: pointer;
+  }
+
+.main_content::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.main_content::-webkit-scrollbar-track {
+  background: linear-gradient(90deg,#434343,#434343 1px,#111 0,#111);
+}
+
+.main_content::-webkit-scrollbar-thumb {
+  background: #434343;
+    border-radius: 16px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25),inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+.main_content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
